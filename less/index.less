@@ -1,0 +1,232 @@
+@import "fontSize";
+.content{
+  width: 1280px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1440px) {
+  .content {
+    width: 1110px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 90%;
+  }
+}
+html,body{
+  min-width: 1280px;
+}
+//头部 top
+header{
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: auto;
+  nav.product_nav{
+    display: flex;
+    justify-content: space-between;
+    .logo-txt{
+      height: 80px;
+      line-height: 80px;
+      color: #35373F;
+      .fnt_30();
+    }
+    .right{
+      display: flex;
+      padding: 17px 0;
+      ul{
+        display: flex;
+        li{
+          a{
+            .fnt_16();
+            line-height: 46px;
+            height: 100%;
+            color: #35373F;
+            display: block;
+            transition: all .3s ease-out;
+            margin-left: 60px;
+            &:hover{
+              color: #4a8fff;
+            }
+          }
+        }
+      }
+      .buy{
+        width: 140px;
+        height: 46px;
+        border-radius: 46px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        line-height: 46px;
+        margin-left: 78px;
+        .fnt_16();
+        transition: all .3s ease-out;
+        background: linear-gradient(90deg, #4A8FFF, #2872E9);
+        background: -ms-linear-gradient(90deg, #4A8FFF, #2872E9);
+        background: -moz-linear-gradient(90deg, #4A8FFF, #2872E9);
+        background: -webkit-linear-gradient(90deg, #4A8FFF, #2872E9);
+        &:hover{
+          background: linear-gradient( #4A8FFF, #2872E9);
+          background: -ms-linear-gradient(#4A8FFF, #2872E9);
+          background: -moz-linear-gradient( #4A8FFF, #2872E9);
+          background: -webkit-linear-gradient( #4A8FFF, #2872E9);
+        }
+      }
+    }
+  }
+
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+  .sticky-wrapper{
+    background: url("../img/page1.jpg") no-repeat center center/cover;
+    height: 100%;
+    .bg{
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .bg4{
+      z-index: 99;
+      background: url("../img/page1_1.jpg") no-repeat center center/cover;
+    }
+    .sticky-wrapper-bg{
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      .bg{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      .bg1{
+        background: url("../img/bg1.png") no-repeat center center/cover;
+        opacity: .2;
+      }
+      .bg2{
+        background: url("../img/bg2.png") no-repeat center center/cover;
+        opacity: .2;
+      }
+      .bg3{
+        background: url("../img/bg3.png") no-repeat center center/cover;
+        opacity: .3;
+      }
+    }
+    h1{
+      .fnt_60();
+      color: #fff;
+      text-align: center;
+
+    }
+  }
+}
+
+
+
+.footer{
+  padding-top: 40px;
+  .remark{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    h1{
+      .fnt_20();
+      color: #35373F;
+      margin-bottom: 20px;
+    }
+    p{
+      .fnt_14();
+      color: #73757E;
+      line-height: 24px;
+    }
+  }
+  .footer_nav{
+    height: 435px;
+    padding-top: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    ul{
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav{
+      width: 72%;
+      h1{
+        color: #35373F;
+        .fnt_20();
+        margin-bottom: 38px;
+      }
+      a{
+        display: block;
+        color: #73757e;
+        .fnt_16();
+        margin-bottom: 18px;
+        &:hover{
+          color: #35373F;
+        }
+      }
+    }
+    .footer_fx{
+      width: 220px;
+      p{
+        color: #35373f;
+        .fnt_14();
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+  .footer_copyright{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    p{
+      color: #73757e;
+      .fnt_16();
+      a{
+        color: #73757e;
+        &:hover{
+          color: #222;
+        }
+      }
+    }
+    .social-share{
+      .icon-wechat .wechat-qrcode{
+        width: 220px;
+      }
+      .social-share-icon{
+        width: 40px;
+        height: 40px;
+        background: #e5e5e5;
+        border-radius: 5px;
+        line-height: 40px;
+        border: none !important;
+        color: #fff;
+      }
+      .icon-wechat:hover{
+        background: #7bc549;
+      }
+      .icon-weibo:hover{
+        background: #ff763b;
+      }
+      .icon-facebook:hover{
+        background: #44619D;
+      }
+      .icon-twitter:hover{
+        background: #55acee;
+      }
+    }
+  }
+}
